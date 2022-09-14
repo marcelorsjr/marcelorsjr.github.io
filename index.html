@@ -17,7 +17,7 @@
 <body>
 	<button type="button" onclick="Evento()">Evento</button>
 
-    <div id="mobile-menu-open" class="shadow-large">
+<!--     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <!-- End #mobile-menu-toggle -->
@@ -265,13 +265,14 @@
             </div>
         </div>
     </footer>
-    <!-- End footer -->
+    <!-- End footer --> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 	<script>
     function Evento(){
-        alert('evento funcionando')
+        alert('evento funcionando');
+	window.webkit.messageHandlers.observer.postMessage("closeMobileButton");
     }
 </script>
 </body>
